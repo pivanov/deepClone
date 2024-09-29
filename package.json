@@ -1,0 +1,96 @@
+{
+  "name": "@pivanov/deep-clone",
+  "description": "Deep clone of objects",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/pivanov/deepClone",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pivanov/deepClone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pivanov/deepClone/issues/new/choose"
+  },
+  "author": {
+    "name": "Pavel Ivanov",
+    "email": "iweb.ivanov@gmail.com"
+  },
+  "keywords": [
+    "vite",
+    "typescript",
+    "package",
+    "toolkit",
+    "deep-clone",
+    "clone deep",
+    "deep clone",
+    "clone",
+    "deep",
+    "clone object",
+    "clone deep object",
+    "clone deep object typescript",
+    "clone deep object javascript",
+    "clone object javascript",
+    "clone deep javascript",
+    "clone javascript",
+    "deep clone object"
+  ],
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "images",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "yarn run lint --fix",
+    "format:style": "prettier . --write",
+    "test": "tsc && vitest watch",
+    "test:ci": "tsc && vitest run",
+    "test:coverage": "yarn run test --coverage",
+    "test:ui": "yarn run test --ui --coverage --open=false"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@faker-js/faker": "^9.0.3",
+    "@types/benchmark": "^2.1.5",
+    "@types/lodash.clonedeep": "^4.5.9",
+    "@types/lodash.isequal": "^4.5.8",
+    "@types/node": "^22.5.5",
+    "@vitest/coverage-v8": "^2.0.5",
+    "@vitest/ui": "^2.0.5",
+    "benchmark": "^2.1.4",
+    "chalk": "^5.3.0",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.isequal": "^4.5.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0",
+    "vite": "^5.4.7",
+    "vite-plugin-dts": "^4.2.1",
+    "vitest": "^2.0.5"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ]
+}
